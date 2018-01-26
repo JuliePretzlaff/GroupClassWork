@@ -11,20 +11,20 @@ namespace GroupWorkInClass
         static void Main(string[] args)
         {
             //    //Problem One:
-            //    int[] numberOne = new int[2];//Declaring an int array
-            //    Console.WriteLine("Greatest number: " + Greatest(numberOne));//Console recieves the greatest number and prints it
+            //    int[] numberOne = new int[2];
+            //    Console.WriteLine("Greatest number: " + Greatest(numberOne));
 
-            ////Problem Two:
-            //int[] getNumbers = new int[2];
-            //Console.WriteLine(EqualityCheck(getNumbers));
+            //Problem Two:
+            int[] getNumbers = new int[2];
+            Console.WriteLine(EqualityCheck(getNumbers));
 
             ////Problem Three:
             //string[] favFoods = new string[3];
             //Console.WriteLine(FoodList(favFoods));
 
-            //Problem Four:
-            double[] twoSides = new double[2];
-            Console.WriteLine("The third side squared = " + Pathagorian(twoSides));
+            ////Problem Four:
+            //double[] twoSides = new double[2];
+            //Console.WriteLine("The third side squared is = " + Pathagorian(twoSides));
 
 
 
@@ -51,25 +51,25 @@ namespace GroupWorkInClass
         //        return sum;
         //    }
 
-        ////Problem Two:
-        //static string EqualityCheck(int[] userInput)
-        // {
-        //   string result;
-        //   for (int i = 0; i < userInput.Length; i++)
-        //    {
-        //       Console.WriteLine("Please enter a number");
-        //       userInput[i] = int.Parse(Console.ReadLine());
-        //    }
-        //    if (userInput[0] == userInput[1])
-        //    {
-        //        result = "The two numbers you've entered are equal.";
-        //    }
-        //    else
-        //    {
-        //       result = "The two numbers you have entered are not equal";
-        //    }
-        //    return result;
-        //}
+        //Problem Two:
+        static bool EqualityCheck(int[] userInput)
+        {
+            bool result;
+            for (int i = 0; i < userInput.Length; i++)
+            {
+                Console.WriteLine("Please enter a number");
+                userInput[i] = int.Parse(Console.ReadLine());
+            }
+            if (userInput[0] == userInput[1])
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
+            return result;
+        }
 
         ////Problem 3:
         //static string FoodList(string[] foods)
@@ -86,19 +86,19 @@ namespace GroupWorkInClass
         //    return foodSentence;
         //}
 
-        //Problem Four:
-         static double Pathagorian(double[] side)
-        {
-            double thirdSide;
-            for (int i = 0; i < side.Length; i++)
-            {
-                Console.WriteLine("Please enter one side of the pyramid: ");
-                side[0] = double.Parse(Console.ReadLine());
-            }
+        ////Problem Four:
+        //static double Pathagorian(double[] side)
+        //{
+        //    double thirdSide;
+        //    for (int i = 0; i < side.Length; i++)
+        //    {
+        //        Console.WriteLine("Please enter one side of the pyramid: ");
+        //        side[0] = double.Parse(Console.ReadLine());
+        //    }
 
-            thirdSide = (side[0] * side[0]) + (side[1] * side[1]);
-                return thirdSide;
-        }
+        //    thirdSide =(side[0] * side[0]) + (side[1] * side[1]);
+        //        return thirdSide;
+        //}
 
 
         }
